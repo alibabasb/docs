@@ -1,15 +1,4 @@
 
-1. virtual-servers
-	1.1 linux-centos-01
-		10.70.174.214
-		root/aa123123
-
-
-查看是否安装了某软件
-rpm -qa | grep "httpd"
-
-搜索安装列表
-yum search all php-mysql
 
 查找包含子串的文件
 find -type f -name '*.php'|xargs grep 'GroupRecord'
@@ -172,7 +161,7 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 			-i 允许对容器进行标准输入交互
 			-d 让容器在后台运行
 			-P 将容器内部使用的网络端口映射到主机上
-			    (随机绑定:通常是32768 32769等)
+					(随机绑定:通常是32768 32769等)
 			-p 指定端口绑定
 			    如: -p 5000:5000
 			--name 指定启动容器的名称
@@ -301,9 +290,6 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 		2. 连接到docker实力中进行管理
 			docker exec -it gitlab /bin/bash
 
-		3. 超级管理员账号
-			root/aa123123
-
 	docker 管理swagger
 		获取:
 			docker pull swaggerapi/swagger-editor
@@ -327,7 +313,7 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 	2. 安装MASTER
 		
 
----Linux - CentOS---------------------------------------------------------------------------------------
+---Linux -----------------------------------------------------------------------------------------------
 	0. 通用
 		0.1 关闭selinux
 			0.1.1 临时关闭 (0: 关闭, 1: 打开)
@@ -376,7 +362,7 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 				拒绝所有包：firewall-cmd --panic-on
 				取消拒绝状态： firewall-cmd --panic-off
 				查看是否拒绝： firewall-cmd --query-panic
-				 
+
 				那怎么开启一个端口呢
 				添加
 					firewall-cmd --zone=public --add-port=80/tcp --permanent    （--permanent永久生效，没有此参数重启后失效）
@@ -386,6 +372,11 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 					firewall-cmd --zone= public --query-port=80/tcp
 				删除
 					firewall-cmd --zone= public --remove-port=80/tcp --permanent
+			查看是否安装了某软件
+			rpm -qa | grep "httpd"
+
+			搜索安装列表
+			yum search all php-mysql
 
 	2.Ubuntu
 		2.1. 开启root账号
@@ -398,12 +389,6 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 					greeter-show-manual-login=true
 					allow-guest=false
 			2.1.5 reboot重启之后即可用root登陆
-
-appkey:
-n19jmcy5n87r9
-
-secret:
-1t6Bz5qPYACB
 
 
 export DEBUG=app:*
