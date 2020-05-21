@@ -392,35 +392,3 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 
 
 export DEBUG=app:*
-
-
-skype: 
-connor@nb01.net/nb01.net
-
-apple id:
-connor@nb01.net/Nb01.net
-
-betradar id:
-ck@nb01.net/aaaaa11111
-connor@nb01.net/admin123456
-
-confluence:
-connor/123
-
-手机账号:
-http://www.smszk.com/plus/view.php?aid=35&num=17138294704
-https://www.becmd.com/receive-freesms-8617138294704.html
-vivo:
-17138294704/aa123123
-OPPO
-17138294704/aa123123
-
-
-邮箱
-connor@nb01.net/aa123123
-connor@nbmm.co/Admin123$%^
-
-NEW EMAIL
-mail.cmtspace.com
-U: connor
-P: Ivi66.net
