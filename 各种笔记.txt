@@ -175,7 +175,7 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 			DESCRIPTION 镜像的描述
 			OFFICIAL 是否docker官方发布
 		退出内部伪终端模式: Ctrl + d
-		查看在运行容器列表: docker ps
+		查看容器列表: docker ps [-a]
 		查看容器控制台输出: docker logs id/name
 		查看容器绑定的端口: docker port id/name
 		查看容器运行的进程: docker top id/name
