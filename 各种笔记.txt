@@ -182,9 +182,10 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 		查看容器的底层信息: docker inspect id/name
 			会返回一个 JSON 文件记录着 Docker 容器的配置和状态信息
 		查看所有镜像列表:   docker images
-		停止指定容器:       docker stop id/name
+		停止指定容器:      docker stop id/name
 		启动已停止的容器:   docker start id/name
-		删除指定镜像:       docker rm id/name [-f]
+		删除指定容器:      docker rm id/name [-f]
+		删除指定镜像:      docker rmi name [-f]
 			容器必须是停止状态
 			-f 强制删除
 			--no-prune 不移除该镜像的过程镜像，默认移除
@@ -391,4 +392,5 @@ ps -ef|grep tomcat|grep -v grep|awk '{print $2}'|xargs kill -9
 			2.1.5 reboot重启之后即可用root登陆
 
 
+heroku
 export DEBUG=app:*
