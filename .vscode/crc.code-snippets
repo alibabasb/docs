@@ -1,0 +1,23 @@
+{
+	"Create react component": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "crc",
+		"body": [
+			"interface $1Props {",
+			"",
+			"}",
+			"",
+			"function $1 (props: $1Props) {",
+			"  return (",
+			"    <div className=\"$1\">",
+			"      $1",
+			"    </div>",
+			"  )",
+			"}",
+			"",
+			"export default $1",
+			"",
+		],
+		"description": "Create react component"
+	}
+}

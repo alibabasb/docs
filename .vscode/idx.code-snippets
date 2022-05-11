@@ -1,0 +1,15 @@
+{
+	"idx": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "idx",
+		"body": [
+			"import $1 from './$1'",
+			"",
+			"import './$1.less'",
+			"",
+			"export default $1",
+			"",
+		],
+		"description": "Index of component"
+	}
+}
